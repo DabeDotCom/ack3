@@ -41,6 +41,7 @@ our $opt_heading;
 our $opt_L;
 our $opt_l;
 our $opt_m;
+our $opt_no_lineno;
 our $opt_output;
 our $opt_passthru;
 our $opt_p;
@@ -144,6 +145,7 @@ MAIN: {
     $opt_L              = $opt->{L};
     $opt_l              = $opt->{l};
     $opt_m              = $opt->{m};
+    $opt_no_lineno      = $opt->{no_lineno};
     $opt_output         = $opt->{output};
     $opt_p              = $opt->{p};
     $opt_passthru       = $opt->{passthru};
@@ -1459,6 +1461,10 @@ searched.
 
 Print a filename heading above each file's results.  This is the default
 when used interactively.
+
+=item B<--no-lineno>
+
+Suppress the prefixing of line numbers on output.  [NYI]
 
 =item B<--help>
 
