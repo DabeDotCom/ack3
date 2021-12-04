@@ -917,12 +917,8 @@ sub print_line_with_options {
             $_lineno   = Term::ANSIColor::colored( $_lineno,   $ENV{ACK_COLOR_LINENO} );
             $_colno    = Term::ANSIColor::colored( $_colno,    $ENV{ACK_COLOR_COLNO} ) if $opt_column;
         }
-        if ( $opt_heading ) {
-            push @line_parts, $_lineno;
-        }
-        else {
-            push @line_parts, $_filename, $_lineno;
-        }
+        push @line_parts, $_filename unless $opt_heading;    # We've already printed it...
+        push @line_parts, $_lineno unless $opt_no_lineno;
         push @line_parts, $_colno if $opt_column;
     }
 
@@ -1464,7 +1460,7 @@ when used interactively.
 
 =item B<--no-lineno>
 
-Suppress the prefixing of line numbers on output.  [NYI]
+Suppress the prefixing of line numbers on output.
 
 =item B<--help>
 
