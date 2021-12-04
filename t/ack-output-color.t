@@ -382,16 +382,16 @@ HERE
 FILENAME_SUBSTITUTION_MULTIPLE : {
     my @expected = line_split( <<"HERE" );
 ${CFN}t/text/amontillado.txt${CRESET}
-${CLN}3${CRESET}:${CFN}t/text/amontillado.txt${CRESET}:3:The thousand injuries of Fortunato I had borne as I best could; but
+${CLN}3${CRESET}:t/text/amontillado.txt:3:The thousand injuries of Fortunato I had borne as I best could; but
 
 ${CFN}t/text/constitution.txt${CRESET}
-${CLN}38${CRESET}:${CFN}t/text/constitution.txt${CRESET}:38:thirty Thousand, but each State shall have at Least one Representative;
-${CLN}241${CRESET}:${CFN}t/text/constitution.txt${CRESET}:241:Congress prior to the Year one thousand eight hundred and eight, but
-${CLN}501${CRESET}:${CFN}t/text/constitution.txt${CRESET}:501:which may be made prior to the Year One thousand eight hundred and eight
+${CLN}38${CRESET}:t/text/constitution.txt:38:thirty Thousand, but each State shall have at Least one Representative;
+${CLN}241${CRESET}:t/text/constitution.txt:241:Congress prior to the Year one thousand eight hundred and eight, but
+${CLN}501${CRESET}:t/text/constitution.txt:501:which may be made prior to the Year One thousand eight hundred and eight
 
 ${CFN}t/text/ozymandias.txt${CRESET}
-${CLN}3${CRESET}:${CFN}t/text/ozymandias.txt${CRESET}:3:Stand in the desert... Near them, on the sand,
-${CLN}14${CRESET}:${CFN}t/text/ozymandias.txt${CRESET}:14:The lone and level sands stretch far away.
+${CLN}3${CRESET}:t/text/ozymandias.txt:3:Stand in the desert... Near them, on the sand,
+${CLN}14${CRESET}:t/text/ozymandias.txt:14:The lone and level sands stretch far away.
 HERE
 
     my @files = qw( t/text );
