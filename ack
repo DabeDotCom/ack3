@@ -1460,7 +1460,8 @@ when used interactively.
 
 =item B<--no-lineno>
 
-Suppress the prefixing of line numbers on output.
+Suppress the prefixing of line numbers on output.  Can't be combined with
+B<--column>.
 
 =item B<--help>
 

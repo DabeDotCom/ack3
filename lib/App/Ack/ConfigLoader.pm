@@ -950,6 +950,7 @@ sub mutex_options {
             f => 1,
             g => 1,
             l => 1,
+            'no-lineno' => 1,
             o => 1,
             output => 1,
             passthru => 1,
@@ -1067,6 +1068,9 @@ sub mutex_options {
         'no-filename' => {
             L => 1,
             l => 1,
+        },
+        'no-lineno' => {
+            column => 1,
         },
         o => {
             A => 1,
